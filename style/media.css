@@ -1,0 +1,482 @@
+@media only screen and (width<=991px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    .layout {
+        width: 94%;
+    }
+
+    header {
+        top: 0;
+        width: 100% !important;
+    }
+
+    .nav-bar {
+        border-radius: 0rem;
+        padding: 10px 30px;
+        background-color: white;
+        z-index: 5;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding: 1rem 0 1rem;
+        z-index: -1;
+        transform: translateY(-100%);
+    }
+
+    .active {
+        animation: toggler-animation-in 0.5s forwards;
+    }
+
+    .deactive {
+        animation: toggler-animation-out 0.5s forwards;
+    }
+
+    #toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @keyframes toggler-animation-in {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+    }
+
+    @keyframes toggler-animation-out {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-100%);
+        }
+
+    }
+
+    .nav-menu li {
+        width: 100%;
+        padding: 1rem 0 1rem 2rem;
+        border-bottom: 1px solid #b1b0b0;
+    }
+
+    .nav-menu li a {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    #hero {
+        padding: 25% 0 50px;
+    }
+
+    .hero-content-and-side-img {
+        flex-direction: column;
+    }
+
+    .hero-content-heading-pera-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content-heading-pera-button h1 {
+        font-size: 2.8rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .gear i {
+        width: 100%;
+    }
+
+    .hero-side-img {
+        width: 100%;
+    }
+
+    .customer-badge {
+        width: 70%;
+        left: 15%;
+        bottom: 20px;
+        padding: 3rem 1.9rem;
+    }
+
+    .customer-badge ul {
+        align-self: center;
+    }
+
+    .states-list {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .states {
+        justify-content: start;
+        width: auto;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        flex-basis: 50%;
+    }
+
+    .states-content {
+        align-self: flex-start;
+    }
+
+    .about-content-side-img {
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .list-info {
+        justify-content: start;
+        gap: 2rem;
+    }
+
+    .about-side-img {
+        margin-top: 1.2rem;
+        width: 100%;
+    }
+
+    .ceo-contact-container {
+        flex-direction: column;
+        padding: 1rem 0;
+        align-items: start;
+    }
+
+    .ceo-info {
+        width: 50%;
+    }
+
+    .ceo-phone {
+        width: 50%;
+    }
+
+    .sub-img {
+        padding: 2px;
+        width: 40%;
+        left: 3%;
+        top: 29%;
+    }
+
+    .experience {
+        width: 55%;
+        padding: 1.4rem;
+        left: 25%;
+    }
+
+    .experience div {
+        font-size: 2rem;
+    }
+
+    .experience div strong {
+        font-size: 2rem;
+
+    }
+
+    .experience p {
+        font-size: 1.2rem;
+    }
+
+    .features-content-details-and-side-img {
+        flex-direction: column;
+    }
+
+    .features-content-details {
+        width: 100%;
+    }
+
+    .features-content-side-img {
+        width: 100%;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        justify-content: center;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+
+    .feature-2-content {
+        flex-direction: column;
+    }
+
+    .feature-2-content-left,
+    .feature-2-content-right {
+        width: 100%;
+    }
+
+    .feature-2-content-left .feature-2-box {
+        flex-direction: column;
+    }
+
+    .feature-2-content-left .feature-2-box h3 {
+        text-align: center;
+
+    }
+
+    .feature-2-content-left .feature-2-box p {
+        text-align: center;
+
+    }
+
+    .feature-2-img {
+        width: 60%;
+    }
+
+    .feature-2-content-right .feature-2-box {
+        flex-direction: column;
+    }
+
+    .feature-2-content-right .feature-2-box h3 {
+        text-align: center;
+    }
+
+    .feature-2-content-right .feature-2-box p {
+        text-align: center;
+
+    }
+
+    .call-to-action-container {
+        padding: 2.6rem 0;
+
+    }
+
+    .call-to-action-content {
+        padding: 0.5rem 1.9rem;
+    }
+
+    .call-to-action-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .item {
+        width: 50%;
+    }
+
+    .testimonials-list {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-list {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        width: 90%;
+        margin: auto;
+    }
+
+    .price-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.6rem;
+    }
+
+    .price {
+        width: 80%;
+    }
+
+    .question-container {
+        flex-direction: column;
+    }
+
+    .question-content-heading-pera-img {
+        width: 100%;
+    }
+
+    .question-list {
+        width: 100%;
+    }
+
+    .contact-contanier {
+        flex-direction: column;
+    }
+
+    .contact-ditails {
+        width: 90%;
+    }
+
+    .massage-form {
+        width: 90%;
+    }
+
+    .name-and-email {
+        flex-direction: column;
+    }
+
+    .massage-form .button button {
+        width: 55%;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 1.9rem;
+    }
+
+    .fotter-landing {
+        width: 100%;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .footer-link-service-follow-contanier {
+        flex-direction: column;
+        gap: 1.9rem;
+    }
+
+    .footer-useful-link-services {
+        width: 100%;
+    }
+
+    .footer-useful-link-services h3 {
+        padding-bottom: 0;
+        margin-bottom: 0.2rem;
+    }
+}
+
+@media (width>=550px) and (width<=900px) {
+    .layout {
+        width: 85%;
+    }
+}
+
+@media screen and (width<=550px) {
+    .layout {
+        width: 95%;
+    }
+
+    .nav-bar {
+        padding: 0.4rem 0.8rem;
+    }
+    .nav-menu li a{
+        font-size: 1.2rem;
+        font-weight: 800;
+
+    }
+    .nav-bar button {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    #toggler {
+        padding: 0.3rem 0.5rem;
+    }
+
+    #toggler i {
+        font-size: 1.5rem;
+    }
+
+    .customer-badge {
+        padding: 4rem 1.9rem;
+    }
+    .about-content-side-img{
+        padding-bottom: 4rem;
+    }
+    .experience {
+        width: 80%;
+        padding: 3.5rem;
+        left: 10%;
+        text-align: center;
+        top: 80%;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-box {
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .price {
+        width: 100%;
+    }
+
+    .question-s {
+        height: 6rem;
+
+    }
+
+    @keyframes open-up {
+        0% {
+            height: 6rem;
+        }
+
+        100% {
+            height: 13rem;
+        }
+    }
+
+    @keyframes close-in {
+        0% {
+            height: 13rem;
+        }
+
+        100% {
+            height: 6rem;
+        }
+
+    }
+
+    .contact-ditails {
+        padding:2rem 1.5rem;
+        width: 100%;
+    }
+
+    .massage-form {
+        padding:2rem 1.5rem;
+        width: 100%;
+    }
+}
+
+
+@media (width>1500px) {
+    html {
+        font-size: 32px;
+    }
+
+    .layout {
+        width: 90%;
+    }
+
+}
